@@ -4,7 +4,6 @@ import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expenses'
 
 export const ExpenseList = (props) => {
-    console.log(props);
     let expenses;
 
     if (props.expenses.length === 0) {
