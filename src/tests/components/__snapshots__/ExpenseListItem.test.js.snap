@@ -6,10 +6,10 @@ exports[`Should render proper data 1`] = `
     Gum
   </p>
   <p>
-    1
+    $0.01
   </p>
   <p>
-    0
+    1st, January, 1970
   </p>
   <Link
     replace={false}
