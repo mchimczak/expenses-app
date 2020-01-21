@@ -7,7 +7,7 @@
     "serve": "live-server public/ --browser:Chrome",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
+    "dev-server": "cross-env NODE_ENV=test webpack-dev-server",
     "test": "cross-env NODE_ENV=test jest --watch --config=jest.config.json",
     "start": "node server/server.js",
     "nodemon": "nodemon server/server.js",
