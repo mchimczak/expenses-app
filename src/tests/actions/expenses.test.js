@@ -81,7 +81,7 @@ test('Should create new expense with provided values', () => {
 
 test('Should add new expense to database and store', (done) => {
     const store = createMockStore({});
-    const expenseData = { description: 'google ads', notes: '', amount: 230, createdAt: 4352 };
+    const expenseData = { description: 'google ads', note: '', amount: 230, createdAt: 4352 };
 
     store.dispatch(startAddExpense(expenseData)).then(() => {
             const actions = store.getActions();
@@ -103,7 +103,7 @@ test('Should add new expense to database and store', (done) => {
 
 test('Should add new expense with default values to database and store', (done) => {
     const store = createMockStore({});
-    const expenseDefaults = { description: '', notes: '', amount: 0, createdAt: 0 };
+    const expenseDefaults = { description: '', note: '', amount: 0, createdAt: 0 };
 
     store.dispatch(startAddExpense({})).then(() => {
         const actions = store.getActions();
