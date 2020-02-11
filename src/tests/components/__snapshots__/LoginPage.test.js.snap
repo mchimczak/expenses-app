@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should display LoginPage properly 1`] = `
+<div>
+  <h1>
+    Your new personal expense manager
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;
